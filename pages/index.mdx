@@ -1,11 +1,89 @@
 import Bleed from 'nextra-theme-docs/bleed'
 
-# Chayse X Vercel Skill Test 
+# Chayse X Vercel Skill Test June.20.2022
 
-**Nextra** is a [Next.js](https://nextjs.org) based static site generator.
+**Question (1) Imagine that you are the most senior support engineer within a team of 3 people. As the principal, and as platform usage and customer volume grows, you’re helping to determine the focus of the team for the following quarter. From this list, pick the 5 highest prioritized actions and 5 lowest prioritized actions you’d lead the team on. Explain why you chose those prioritization levels.**
 
-It supports Markdown and React components ([MDX](/features/mdx)), automatically generated [sidebar and anchor links](/get-started#sidebar-and-anchor-links), file-system based routing, built-in syntax highlighting, image optimization, custom layouts, i18n, and all the features you love about Next.js.
+**5 Highest Priority**
+1.	Write and maintain support articles and docs pages
+2.	Analyze hundreds of support tickets to spot trends the product team can use
+3.	Help train and onboard new support teammates
+4.	Work with engineering teams during incidents and provide updates to internal and external stakeholders
+5.	Act as a dedicated CSE for a handful of key customers to ensure their success using Vercel
 
-Here's what you will get in 1 minute:
+The reason for choosing the above prioritization levels is to maintain the integrity of the support engineer’s role. The above list is focused on practices and processes that give the support team scalability. By documenting and maintaining a knowledge base, new hires plus existing staff can learn how to quickly adapt to issues that may be unknown. This helps removes bottlenecks from the support process and creates a healthy relationship with the customer. Working with other engineering teams is essential as well. Good communication in a support role is the most overlooked skill. When not done correctly it can create a huge problem for engineers and customer expectations. 
 
-<Bleed>![Nextra Example](../public/demo.png)</Bleed>
+**5 Lowest Priority**
+1.	Help resolve billing issues for customers
+2.	Manage a support team
+3.	Respond to queries on Twitter, Reddit, Hacker News and other 3rd party sites
+4.	Engage multiple users at once in a public discussion, to answer their questions and troubleshoot problems
+5.	Work with people to figure out if Vercel is suitable for their use case
+
+The above list seemed to be most remote to the support engineer’s role. Billing issues, QA sessions and internal management are tasks that are easily done by other groups/members of an organization. Though they are important they are not essential to the growth of a Support team. 
+
+**Question (2) What do you want to learn, or do more of, at work?**
+
+I want to learn new software technologies and processes that are proven to be effective. I would like to do more work with product and back-end engineering teams to help improve the business processes and teach our clients about best practices so they can get the most out of the product.
+
+**Question (3) Imagine you are tasked with the following quarterly project: “Build a process for ensuring 
+90% of our paid customers add 2FA (Two-Factor Authentication) ”. 
+Spend 10 minutes outlining how you would approach this directive and execute on it.**
+
+1.	Educate our paid customers on the importance of 2FA. 
+2.	Conduct surveys for Paid customers to determine best 2FA authentication method.
+    a.  SMS TOKEN
+    b.	EMAIL TOKEN
+    c.	HARDWARE TOKEN
+    d.	SOFTWARE TOKEN
+    e.	PHONE CALL
+    f.	BIOMETRIC VERIFICATION
+3.	Work with internal stakeholders on best 2FA method(s) to use. 
+4.	Create 2FA process using best method from surveys/consultation.
+5.	Q/A and Test the 2FA process with a live account(s). 
+6.	Implement and Deploy after successful Q/A
+
+**Question (4) Add a temporary in-app redirect to your project, redirecting /hello-vercel (or any path – 
+but be sure to tell us which!) to https://vercel.com**
+
+**Question (5) 5.	A customer writes in to the Helpdesk stating: "I have a custom domain which I 
+purchased at GoDaddy and I want to use it on my project". In a couple of paragraphs, 
+how do you respond?**
+
+Hi _______,
+  Thank you for reaching out to Vercel Support helpdesk. I am happy to help you with setting up your custom domain for your project. 
+  From my understanding you already purchased a domain from GoDaddy and you want to redirect your Vercel app to this domain. Is that correct? 
+  If so, please use the following resource to determine the best solution for your needs. https://vercel.com/docs/concepts/projects/custom-domains
+  In the above link there is documentation that provides the exact steps to setting up a custom domain on your Vercel project. With GoDaddy you are either   given the option to configure your domain by A record or Nameservers. After reading the above linked document, please let me know if you have any        
+  questions and a I am happy to help!
+Best, 
+Chayse
+
+**Question (6) A user writes in with the following problem: “On our team, GitHub commits by user 
+janedoe@helloworld.com don’t trigger any deployments. Commits by other users work fine. Other projects work fine. Help! What can we do to fix this?” How would you approach debugging this problem? What questions would you ask, either internally or of the user? Write a response which you would send back to this user.**
+
+Hi _____,
+
+Thank you for contacting Vercel Support and providing the description of the deployment issue. 
+From my understanding the GitHub commits by one user fails to trigger any deployments. This is only happening with one user and on one project. Is that correct? 
+
+If so, then can you kindly check and confirm the following list of fixes are complete: 
+
+1.	If you only granted permission for a limited set of repositories, there is a chance that the repository that Jane Doe is trying to push to doesn't have the necessary permissions. You can resolve this from the Git provider side by either granting permissions for all of the repositories, or you can make sure the repository in question is added to the users list.
+
+2.	If you are pushing commits to a private repository connected to a Vercel project that belongs to a Team, ensure you are a member of that Vercel Team. Once you have been added to the Team, your commits will deploy as expected.
+
+3.	Pushed commits will deploy automatically for public repositories. However, if the vercel.json file changed or the project has Environment Variables, a Team Member on Vercel will have to authorize the Deployment. This is a security measure that ensures changes to Environment Variables and other configuration properties are reviewed before a Deployment is created (it can be disabled if you prefer). A link to authorize the Deployment will be posted as a comment on the Pull Request.
+
+If the issue still persists after checking the list please provide the runtime logs for the app. In the meantime I will attempt to replicate and isolate the issue on my end. 
+Best,
+Chayse
+
+**Question (7) What do you think is one of the most common problems which customers ask Vercel for help with? How would you help customers to overcome common problems, short-term and long-term?**
+
+I think the most common question is how to integrate domain to Vercel. 
+I would help customers overcome common problems by creating documentation that is clearly written and easy to follow when these issues arise. I would also work with our internal engineering teams to create better processes, so the issues appear less. 
+
+**Question (8) How could we improve or alter this familiarization exercise?**
+
+I would improve this exercise by having links to direct people to a get started guide and proper documentation to be better prepared. My experience was not smooth when attempting to access links in this document.
